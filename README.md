@@ -19,9 +19,9 @@ Cinsiyet, Sinif, Brans, Yerlesim Yeri
 ## Model Süreci
 Üç aşamalı hiyerarşik regresyon yaklaşımı uygulanmıştır:
 
-### Model 1 (Temel) — Yalnızca demografik değişkenler
-### Model 2 (Genişletilmiş) — Demografik + psikolojik ölçek puanları
-### Model Final — AIC'yi minimize eden iki yönlü adım adım seçim 
+### Model 1      — Yalnızca demografik değişkenler
+### Model 2      — Demografik + psikolojik ölçek puanları
+### Model Final  — AIC'yi minimize eden iki yönlü adım adım seçim 
 
 ## Temel Bulgular
 R² = 0.511 → Model, yeterlik algısındaki varyansın ~%51'ini açıklamaktadır
