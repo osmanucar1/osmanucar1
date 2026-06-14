@@ -6,10 +6,10 @@ Bu çalışma, Hacettepe Üniversitesi Eğitim Fakültesi öğrencilerinin (öğ
 
 ## Kullanılan Değişkenler
 
-# Bağımlı Değişken: 
+Bağımlı Değişken: 
 yeterlik_skor (mesleki yeterlik algısı)
 
-# Bağımsız Değişkenler:
+Bağımsız Değişkenler:
 inanc_skor (Eğitimsel inanç), 
 algi_skor (Uyum güçlüğü gösteren öğrenciye yönelik algı), 
 kaygi_skor (Duygusal tepki/kaygı düzeyi), 
