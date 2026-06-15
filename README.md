@@ -7,7 +7,7 @@ Bu çalışma, Hacettepe Üniversitesi Eğitim Fakültesi öğrencilerinin (öğ
 ## Örneklem
 Çalışmaya Hacettepe Üniversitesi Eğitim Fakültesi'nden **305 öğretmen adayı** katılmıştır.
 
-**Örneklemimizle İlgili Bilgiler**
+***Örneklemimizle İlgili Bilgiler***                                                                                                                               
 **Cinsiyet:**        Kadın: 230 (%75.4)   Erkek: 75 (%24.6)                                                                                                    
 **Sınıf:**           1. sınıf: 45   2. sınıf: 107   3. sınıf: 83   4. sınıf: 57   Artık yıl: 13                                                           
 **Yerleşim Yeri:**   Şehir: 185 (%60.7)   İlçe: 86 (%28.2)   Köy: 34 (%11.1)                                                                                                    
