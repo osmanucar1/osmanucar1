@@ -1,0 +1,152 @@
+---
+title: "aday_ogrt_anket_regresyon_modeli_ciktilar"
+output: pdf_document
+date: "2026-06-15"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(readxl)
+library(lmtest)
+library(sandwich)
+library(lmtest)
+library(ggplot2)
+library(psych)
+library(car)
+```
+
+
+```{r}
+df <- read_excel("C:/Users/Lenovo/OneDrive/Belgeler/anket_verisi_r_analiz.xlsx")
+```
+
+```{r}
+df$Cinsiyet <- as.factor(df$Cinsiyet )
+df$YerlesimYeri <- as.factor(df$`Buyudugunuz yerlesim yeri`)
+df$Brans <- as.factor(df$Brans)
+df$Gelir <- as.factor(df$Gelir)
+df$Deneyim <- as.factor(df$Deneyim)
+df$Sinif <- as.factor(df$Sinif)
+df$B1_r <- 6 - df$B1   #ters
+df$B5_r <- 6 - df$B5   #ters
+df$B6_r <- 6 - df$B6   #ters
+df$B7_r <- 6 - df$B7     #ters
+
+b_cols <- paste0("B", 1:7)  
+c_cols <- paste0("C", 1:9)   
+d_cols <- paste0("D", 1:6)   
+f_cols <- paste0("F", 1:10) 
+e_cols <- paste0("E", 1:9)
+
+df[b_cols] <- lapply(df[b_cols], as.numeric)
+df[c_cols] <- lapply(df[c_cols], as.numeric)
+df[d_cols] <- lapply(df[d_cols], as.numeric)
+df[f_cols] <- lapply(df[f_cols], as.numeric)
+df[e_cols] <- lapply(df[e_cols], function(x) ifelse(x == "Evet", 1, 0))
+b_cols <- c("B1_r","B2","B3","B4","B5_r","B6_r","B7_r")
+
+df$algi_skor      <- rowMeans(df[b_cols]) 
+df$inanc_skor     <- rowMeans(df[c_cols])
+df$kaygi_skor     <- rowMeans(df[d_cols])
+df$yeterlik_skor  <- rowMeans(df[f_cols])
+df$fiziksel_skor  <- rowMeans(df[e_cols])  
+```
+
+```{r}
+describe(df$yeterlik_skor)
+```
+
+```{r}
+shapiro.test(df$yeterlik_skor)
+```
+
+```{r}
+model1 <- lm(yeterlik_skor ~ Cinsiyet + Sinif + YerlesimYeri + Brans,
+             data = df)
+summary(model1)
+
+```
+
+```{r}
+shapiro.test(residuals(model1))
+```
+
+```{r}
+bptest(model1)
+```
+
+```{r}
+dwtest(model1)
+```
+
+```{r}
+vif(model1)
+```
+```{r}
+par(mfrow = c(2, 2))
+plot(model1)
+```
+
+```{r}
+model2 <- lm(yeterlik_skor ~ Cinsiyet + Sinif + YerlesimYeri + Brans +
+               algi_skor + inanc_skor + kaygi_skor + fiziksel_skor,
+             data = df)
+summary(model2)
+```
+
+```{r}
+anova(model1, model2)
+```
+
+```{r}
+shapiro.test(residuals(model2))
+```
+
+```{r}
+bptest(model2)
+```
+
+```{r}
+dwtest(model2)
+```
+
+
+```{r}
+vif(model2)
+```
+
+```{r}
+model_bos <- lm(yeterlik_skor ~ 1, data = df)
+
+model_final <- step(model2, 
+                    direction = "both",
+                    trace = 1)
+```
+
+```{r}
+shapiro.test(residuals(model_final))
+```
+
+```{r}
+bptest(model_final)
+```
+
+```{r}
+dwtest(model_final)
+```
+
+```{r}
+vif(model_final)
+```
+
+```{r}
+coeftest(model_final, vcov = vcovHC(model_final, type = "HC3"))
+```
+
+```{r}
+summary(model_final)
+```
+
