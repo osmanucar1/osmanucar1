@@ -19,12 +19,12 @@ Branş değişkeninde 16 farklı program yer almakta; Fizik (n=13), Türkçe (n=
 
 ## Betimleyici İstatistikler
 
-Ölçek                                | Ort. | SS   | Min  | Max  |
-Algı/Tutum (`algi_skor`)             | 3.29 | 0.48 | 2.00 | 4.71 |
-Eğitimsel İnanç (`inanc_skor`)       | 3.69 | 0.70 | 1.44 | 4.78 |
-Kaygı (`kaygi_skor`)                 | 2.82 | 0.93 | 1.00 | 5.00 |
-Yeterlik (`yeterlik_skor`)           | 3.56 | 0.77 | 1.00 | 5.00 |
-Davranışsal Tepki (`fiziksel_skor`)  | 0.63 | 0.12 | 0.00 | 1.00 |
+Ölçek                                | Ort. | SS   | Min  | Max  |                                                                                                 
+Algı/Tutum (`algi_skor`)             | 3.29 | 0.48 | 2.00 | 4.71 |                                                                                                 
+Eğitimsel İnanç (`inanc_skor`)       | 3.69 | 0.70 | 1.44 | 4.78 |                                                                                              
+Kaygı (`kaygi_skor`)                 | 2.82 | 0.93 | 1.00 | 5.00 |                                                                                               
+Yeterlik (`yeterlik_skor`)           | 3.56 | 0.77 | 1.00 | 5.00 |                                                                                                
+Davranışsal Tepki (`fiziksel_skor`)  | 0.63 | 0.12 | 0.00 | 1.00 |                                                                                                 
 
 > Tüm ölçekler 1–5 aralığında puanlanmıştır (fiziksel_skor: 0–1 oranı).
 
