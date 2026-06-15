@@ -8,10 +8,11 @@ Bu çalışma, Hacettepe Üniversitesi Eğitim Fakültesi öğrencilerinin (öğ
 Çalışmaya Hacettepe Üniversitesi Eğitim Fakültesi'nden **305 öğretmen adayı** katılmıştır.
 
 **Örneklemimizle İlgili Bilgiler**
-**Cinsiyet:**        Kadın: 230 (%75.4)   Erkek: 75 (%24.6) 
-**Sınıf:**           1. sınıf: 45   2. sınıf: 107   3. sınıf: 83   4. sınıf: 57   Artık yıl: 13 
-**Yerleşim Yeri:**   Şehir: 185 (%60.7)   İlçe: 86 (%28.2)   Köy: 34 (%11.1) 
-**Branş:**           16 farklı öğretmenlik programı 
+**Cinsiyet:**        Kadın: 230 (%75.4)   Erkek: 75 (%24.6)
+**Sınıf:**           1. sınıf: 45   2. sınıf: 107   3. sınıf: 83   4. sınıf: 57   Artık yıl: 13
+**Yerleşim Yeri:**   Şehir: 185 (%60.7)   İlçe: 86 (%28.2)   Köy: 34 (%11.1)
+**Branş:**           16 farklı öğretmenlik programı
+
 ### **Örneklem Uyarısı:**
 Yerleşim yeri açısından köy kökenli katılımcı sayısı (n=34) diğer gruplara kıyasla oldukça düşüktür. Bu nedenle yerleşim yerine göre yapılan karşılaştırmalarda gruplar arası denge sağlanamamış olup bulgular ihtiyatla yorumlanmalıdır.
 Branş değişkeninde 16 farklı program yer almakta; Fizik (n=13), Türkçe (n=13) ve Biyoloji (n=6) gibi branşlarda katılımcı sayısı oldukça sınırlıdır. Bu branşlara özgü karşılaştırmalar istatistiksel güç açısından yetersiz kalabilir.
