@@ -56,7 +56,7 @@ yeterlilik_skor =  0.778 + 0.787inanc_skor - 0.161cinsiyet(kadin)
 1-) Model, yeterlik algısındaki varyansın yaklaşık %51'ini açıklamaktadır. (R² = 0.511) Yaklaşık %49'luk kısım ise başka bağımsız değişkenler tarafından açıklanmaktadır.                                                                                                                                                  
 2-) Model istatistiksel olarak anlamlıdır. {F(2, 302) = 158, p < .001}                                                                                             
 3-) Eğitimsel inanç puanı anlamlı bulunmuştur. (B = 0.787, p < .001) Eğitimsel inanç skoru arttıkça yeterlilik algısı artar.                                       
-4-) Cinsiyet anlamlı bulunmuştur (B = −0.161, p = .027); kadın adaylar erkeklere kıyasla kendilerini biraz daha az yeterli hissetmektedir.
+4-) Cinsiyet anlamlı bulunmuştur (B = −0.161, p = .027); kadın adaylar erkeklere kıyasla kendilerini biraz daha az yeterli hissetmektedir.                        
 5-) Algı, kaygı ve davranışsal tepki puanları; eğitimsel inanç modele girince anlamlılığını yitirmiştir.
 
 ## Sınırlılıklar
